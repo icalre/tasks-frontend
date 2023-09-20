@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.list-item {
+  flex: 1;
+  flex-direction: row-reverse;
+  padding-right: 10px;
+  margin-right: 10px;
+  margin-left: 0px;
+  padding-left: 0px;
+  color: black;
+}
+
+.action-button {
+  align-self: center;
+  margin-right: 10px;
+}
+
+.line-through-title {
+  text-decoration: line-through;
+}

@@ -1,0 +1,38 @@
+@import "../../../../../styles.scss";
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-container {
+  padding: 10px;
+}
+
+.form-actions {
+  align-self: flex-end;
+  margin: 0 20px 10px 0;
+}
+
+.loader-container {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  z-index: 2;
+}
+
+.loader {
+  align-items: center;
+  justify-content: center;
+}
+.spinner-form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}

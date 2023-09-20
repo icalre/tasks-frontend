@@ -1,0 +1,37 @@
+<div class="container">
+    <mat-list-option
+            class="list-item"
+            [selected]="isCompleted"
+            (click)="toggle.emit(task)"
+    >
+        <h3 matListItemTitle [class.line-through-title]="isCompleted">
+            {{ task.title }}
+        </h3>
+        <p
+                [matTooltip]="task.description || ''"
+                matTooltipShowDelay="1000"
+                matTooltipHideDelay="500"
+                matTooltipClass="tooltip"
+                matTooltipPosition="below"
+                matListItemLine
+        >
+            {{ task.description }}
+        </p>
+    </mat-list-option>
+    <button
+            mat-icon-button
+            color="primary"
+            class="action-button"
+            (click)="edit.emit(task)"
+    >
+        <mat-icon>edit</mat-icon>
+    </button>
+    <button
+            mat-icon-button
+            color="accent"
+            class="action-button"
+            (click)="delete.emit(task)"
+    >
+        <mat-icon>delete</mat-icon>
+    </button>
+</div>
